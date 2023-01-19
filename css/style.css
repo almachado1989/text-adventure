@@ -1,0 +1,92 @@
+:root {
+    --width: 40vw;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    background-image: url('../images/background.jpg');
+    background-color: red;
+    background-size: cover;
+    background-blend-mode: multiply;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+h1{
+    font-family: 'Face Your Fears', sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+    list-style-position: inside;
+    text-align: center;
+    max-width: var(--width);
+}
+
+li {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+label {
+    margin-right: 2vw;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+form {
+    text-align: center;
+}
+
+p {
+    width: var(--width);
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+form div {
+    margin-bottom: 2vh;
+}
+
+section {
+    padding: 2vh 5vw;
+    background: rgba(0, 0, 0, 0.7);  
+}
+
+a:hover {
+    color: red;
+    transition: 0.2s;
+}
+
+li:hover{ 
+    animation: pulse 1s infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1) }
+    100% { transform: scale(1); }
+}
+
+#main {
+    font-size: 3em;
+}
+
+#victory {
+    background-color: blue;
+    background-image: url('../images/victory.jpg');
+    background-size: cover;
+}
